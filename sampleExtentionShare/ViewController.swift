@@ -12,7 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //ユーザーデフォルトを用意する
+        let myDefault =  UserDefaults(suiteName: "group.com.eshare")
+        
+        //データを読みだして
+        var myStr = myDefault?.string(forKey: "myUrl")
+        
+        //文字列が入ってたら表示する
+        if let tmpStr = myStr{
+            print(tmpStr)
+        }
+
+
     }
 
     override func didReceiveMemoryWarning() {

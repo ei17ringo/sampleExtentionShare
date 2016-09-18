@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>infoshare.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>sampleExtentionShare.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>19A681751D8EFB8B00A152E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>19A6818B1D8EFBF700A152E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,6 +14,9 @@
 		19A681651D8EFB8B00A152E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A681631D8EFB8B00A152E0 /* LaunchScreen.storyboard */; };
 		19A681701D8EFB8B00A152E0 /* sampleExtentionShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6816F1D8EFB8B00A152E0 /* sampleExtentionShareTests.swift */; };
 		19A6817B1D8EFB8B00A152E0 /* sampleExtentionShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6817A1D8EFB8B00A152E0 /* sampleExtentionShareUITests.swift */; };
+		19A6818F1D8EFBF700A152E0 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6818E1D8EFBF700A152E0 /* ShareViewController.swift */; };
+		19A681921D8EFBF700A152E0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A681901D8EFBF700A152E0 /* MainInterface.storyboard */; };
+		19A681961D8EFBF700A152E0 /* infoshare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 19A6818C1D8EFBF700A152E0 /* infoshare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,28 @@
 			remoteGlobalIDString = 19A681561D8EFB8B00A152E0;
 			remoteInfo = sampleExtentionShare;
 		};
+		19A681941D8EFBF700A152E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19A6814F1D8EFB8B00A152E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19A6818B1D8EFBF700A152E0;
+			remoteInfo = infoshare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19A6819A1D8EFBF700A152E0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				19A681961D8EFBF700A152E0 /* infoshare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		19A681571D8EFB8B00A152E0 /* sampleExtentionShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sampleExtentionShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +71,12 @@
 		19A681761D8EFB8B00A152E0 /* sampleExtentionShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleExtentionShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A6817A1D8EFB8B00A152E0 /* sampleExtentionShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleExtentionShareUITests.swift; sourceTree = "<group>"; };
 		19A6817C1D8EFB8C00A152E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19A6818C1D8EFBF700A152E0 /* infoshare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = infoshare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		19A6818E1D8EFBF700A152E0 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		19A681911D8EFBF700A152E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		19A681931D8EFBF700A152E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19A6819B1D8F07E700A152E0 /* infoshare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = infoshare.entitlements; sourceTree = "<group>"; };
+		19A6819C1D8F080B00A152E0 /* sampleExtentionShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sampleExtentionShare.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +101,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19A681891D8EFBF700A152E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +117,7 @@
 				19A681591D8EFB8B00A152E0 /* sampleExtentionShare */,
 				19A6816E1D8EFB8B00A152E0 /* sampleExtentionShareTests */,
 				19A681791D8EFB8B00A152E0 /* sampleExtentionShareUITests */,
+				19A6818D1D8EFBF700A152E0 /* infoshare */,
 				19A681581D8EFB8B00A152E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +128,7 @@
 				19A681571D8EFB8B00A152E0 /* sampleExtentionShare.app */,
 				19A6816B1D8EFB8B00A152E0 /* sampleExtentionShareTests.xctest */,
 				19A681761D8EFB8B00A152E0 /* sampleExtentionShareUITests.xctest */,
+				19A6818C1D8EFBF700A152E0 /* infoshare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +136,7 @@
 		19A681591D8EFB8B00A152E0 /* sampleExtentionShare */ = {
 			isa = PBXGroup;
 			children = (
+				19A6819C1D8F080B00A152E0 /* sampleExtentionShare.entitlements */,
 				19A6815A1D8EFB8B00A152E0 /* AppDelegate.swift */,
 				19A6815C1D8EFB8B00A152E0 /* ViewController.swift */,
 				19A6815E1D8EFB8B00A152E0 /* Main.storyboard */,
@@ -125,6 +165,17 @@
 			path = sampleExtentionShareUITests;
 			sourceTree = "<group>";
 		};
+		19A6818D1D8EFBF700A152E0 /* infoshare */ = {
+			isa = PBXGroup;
+			children = (
+				19A6819B1D8F07E700A152E0 /* infoshare.entitlements */,
+				19A6818E1D8EFBF700A152E0 /* ShareViewController.swift */,
+				19A681901D8EFBF700A152E0 /* MainInterface.storyboard */,
+				19A681931D8EFBF700A152E0 /* Info.plist */,
+			);
+			path = infoshare;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +186,12 @@
 				19A681531D8EFB8B00A152E0 /* Sources */,
 				19A681541D8EFB8B00A152E0 /* Frameworks */,
 				19A681551D8EFB8B00A152E0 /* Resources */,
+				19A6819A1D8EFBF700A152E0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				19A681951D8EFBF700A152E0 /* PBXTargetDependency */,
 			);
 			name = sampleExtentionShare;
 			productName = sampleExtentionShare;
@@ -181,6 +234,23 @@
 			productReference = 19A681761D8EFB8B00A152E0 /* sampleExtentionShareUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		19A6818B1D8EFBF700A152E0 /* infoshare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19A681971D8EFBF700A152E0 /* Build configuration list for PBXNativeTarget "infoshare" */;
+			buildPhases = (
+				19A681881D8EFBF700A152E0 /* Sources */,
+				19A681891D8EFBF700A152E0 /* Frameworks */,
+				19A6818A1D8EFBF700A152E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = infoshare;
+			productName = infoshare;
+			productReference = 19A6818C1D8EFBF700A152E0 /* infoshare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,7 +263,13 @@
 				TargetAttributes = {
 					19A681561D8EFB8B00A152E0 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NF6KLZDSZ2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					19A6816A1D8EFB8B00A152E0 = {
 						CreatedOnToolsVersion = 8.0;
@@ -204,6 +280,16 @@
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 19A681561D8EFB8B00A152E0;
+					};
+					19A6818B1D8EFBF700A152E0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NF6KLZDSZ2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -223,6 +309,7 @@
 				19A681561D8EFB8B00A152E0 /* sampleExtentionShare */,
 				19A6816A1D8EFB8B00A152E0 /* sampleExtentionShareTests */,
 				19A681751D8EFB8B00A152E0 /* sampleExtentionShareUITests */,
+				19A6818B1D8EFBF700A152E0 /* infoshare */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +336,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A6818A1D8EFBF700A152E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A681921D8EFBF700A152E0 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +375,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19A681881D8EFBF700A152E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A6818F1D8EFBF700A152E0 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +395,11 @@
 			isa = PBXTargetDependency;
 			target = 19A681561D8EFB8B00A152E0 /* sampleExtentionShare */;
 			targetProxy = 19A681771D8EFB8B00A152E0 /* PBXContainerItemProxy */;
+		};
+		19A681951D8EFBF700A152E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19A6818B1D8EFBF700A152E0 /* infoshare */;
+			targetProxy = 19A681941D8EFBF700A152E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +418,14 @@
 				19A681641D8EFB8B00A152E0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		19A681901D8EFBF700A152E0 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19A681911D8EFBF700A152E0 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -411,7 +527,10 @@
 		19A681801D8EFB8C00A152E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sampleExtentionShare/sampleExtentionShare.entitlements;
+				DEVELOPMENT_TEAM = NF6KLZDSZ2;
 				INFOPLIST_FILE = sampleExtentionShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.erikoichinohe.sampleExtentionShare;
@@ -423,7 +542,10 @@
 		19A681811D8EFB8C00A152E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sampleExtentionShare/sampleExtentionShare.entitlements;
+				DEVELOPMENT_TEAM = NF6KLZDSZ2;
 				INFOPLIST_FILE = sampleExtentionShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.erikoichinohe.sampleExtentionShare;
@@ -486,6 +608,34 @@
 			};
 			name = Release;
 		};
+		19A681981D8EFBF700A152E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = infoshare/infoshare.entitlements;
+				DEVELOPMENT_TEAM = NF6KLZDSZ2;
+				INFOPLIST_FILE = infoshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erikoichinohe.sampleExtentionShare.infoshare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		19A681991D8EFBF700A152E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = infoshare/infoshare.entitlements;
+				DEVELOPMENT_TEAM = NF6KLZDSZ2;
+				INFOPLIST_FILE = infoshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erikoichinohe.sampleExtentionShare.infoshare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -519,6 +669,14 @@
 			buildConfigurations = (
 				19A681861D8EFB8C00A152E0 /* Debug */,
 				19A681871D8EFB8C00A152E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19A681971D8EFBF700A152E0 /* Build configuration list for PBXNativeTarget "infoshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19A681981D8EFBF700A152E0 /* Debug */,
+				19A681991D8EFBF700A152E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
